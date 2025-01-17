@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>Microsoft.SpeechServices.VideoTranslationLib.PrivateBase</AssemblyName>
+		<RootNamespace>Microsoft.SpeechServices.VideoTranslationLib.PrivateBase</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\CommonLib.Private\CommonLib.Private.csproj" />
+	  <ProjectReference Include="..\..\CommonLib.Public\CommonLib.Public.csproj" />
+	</ItemGroup>
+
+
+</Project>

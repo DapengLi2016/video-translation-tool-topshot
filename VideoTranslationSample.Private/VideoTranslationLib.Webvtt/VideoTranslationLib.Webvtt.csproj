@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>Microsoft.SpeechServices.VideoTranslationLib.Webvtt</AssemblyName>
+		<RootNamespace>Microsoft.SpeechServices.VideoTranslationLib.Webvtt</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="SubtitlesParser" Version="1.5.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\CommonLib.Public\CommonLib.Public.csproj" />
+	  <ProjectReference Include="..\VideoTranslationLib.PrivateBase\VideoTranslationLib.PrivateBase.csproj" />
+	</ItemGroup>
+
+</Project>
