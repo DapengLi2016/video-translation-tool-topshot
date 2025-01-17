@@ -1,0 +1,342 @@
+﻿WEBVTT
+
+00:00:03.366 --> 00:00:05.032
+{
+  "globalMetadata": {
+    "speakers": {
+      "代驾A": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      },
+      "代驾B": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      },
+      "秘书": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      },
+      "简柠": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      },
+      "简父": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      },
+      "顾时宴": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      },
+      "顾氏女": {
+        "defaultSsmlProperties": {
+          "voiceKind": "PlatformVoice"
+        }
+      }
+    }
+  },
+  "id": "c938a9c7-7e16-40af-b427-4c561d8d391f",
+  "speakerId": "代驾A",
+  "translatedText": "そういえば、お前、大学生の女の子なのに"
+}
+
+00:00:05.033 --> 00:00:06.432
+{
+  "id": "3308f9ef-2ece-470e-ae27-15a5fdedce4a",
+  "speakerId": "代驾A",
+  "translatedText": "なんで運転代行サービスなどしているんだ？"
+}
+
+00:00:06.600 --> 00:00:08.165
+{
+  "id": "98c8ac01-027a-49c6-8cd6-4307b48448ff",
+  "speakerId": "代驾B",
+  "translatedText": "まあ、不運だからね"
+}
+
+00:00:08.200 --> 00:00:09.332
+{
+  "id": "7e49c384-75e9-4225-984e-a414663d7c96",
+  "speakerId": "代驾B",
+  "translatedText": "ギャンブルに溺れる父親がいて"
+}
+
+00:00:09.433 --> 00:00:10.132
+{
+  "id": "b257458e-cb2a-4de6-b446-79716b0323e9",
+  "speakerId": "代驾B",
+  "translatedText": "自分で"
+}
+
+00:00:10.133 --> 00:00:10.932
+{
+  "id": "3870ca91-563b-4b59-a79f-00aa77440d17",
+  "speakerId": "代驾B",
+  "translatedText": "生活費を稼ぐしかないんだ"
+}
+
+00:00:11.666 --> 00:00:13.832
+{
+  "id": "0fb461cc-8fe5-4770-ac4b-768f5eaf5d93",
+  "speakerId": "简父",
+  "translatedText": "簡ネイ、この役立たず！"
+}
+
+00:00:14.400 --> 00:00:15.899
+{
+  "id": "c5c69950-0df3-40c3-a9c7-d0fcac7dca03",
+  "speakerId": "简父",
+  "translatedText": "俺が金を送れと言ったのに"
+}
+
+00:00:15.933 --> 00:00:17.299
+{
+  "id": "642c9b9d-50af-46a9-b617-ee91c4074226",
+  "speakerId": "简父",
+  "translatedText": "俺の言うことを"
+}
+
+00:00:17.300 --> 00:00:18.032
+{
+  "id": "3d6f87f2-1fc8-4193-aceb-e7eac7e64d2d",
+  "speakerId": "简父",
+  "translatedText": "聞き流しやがって"
+}
+
+00:00:18.033 --> 00:00:19.132
+{
+  "id": "63d5d43a-80d0-4597-a2e3-eb78b607c0b9",
+  "speakerId": "简父",
+  "translatedText": "役立たずが！"
+}
+
+00:00:19.133 --> 00:00:20.632
+{
+  "id": "10c56c60-24eb-413b-b31a-cf0ca9de0f4e",
+  "speakerId": "简父",
+  "translatedText": "どうやってそんなことをしたんだ"
+}
+
+00:00:20.633 --> 00:00:21.199
+{
+  "id": "6b0bcf68-86ba-4f21-9267-0581f49178ae",
+  "speakerId": "简父",
+  "translatedText": "よこせ"
+}
+
+00:00:21.200 --> 00:00:22.199
+{
+  "id": "970c657a-9b82-43c5-bfd9-31061c84b90b",
+  "speakerId": "简柠",
+  "translatedText": "強盗だ！"
+}
+
+00:00:24.100 --> 00:00:24.999
+{
+  "id": "27fd2e56-c9be-495f-bbb0-25699d0d027e",
+  "speakerId": "简父",
+  "translatedText": "言っとくが"
+}
+
+00:00:25.100 --> 00:00:26.199
+{
+  "id": "3c6af90b-bd35-4523-a08e-4adaed208966",
+  "speakerId": "简父",
+  "translatedText": "娘が稼いだ金"
+}
+
+00:00:26.433 --> 00:00:27.499
+{
+  "id": "24175851-7781-49ee-870e-827c191e6694",
+  "speakerId": "简父",
+  "translatedText": "親が使うのは当たり前だろ"
+}
+
+00:00:27.566 --> 00:00:28.365
+{
+  "id": "b8bae350-5692-43d5-8098-3840ace6e75d",
+  "speakerId": "简父",
+  "translatedText": "聞こえたか"
+}
+
+00:00:28.733 --> 00:00:30.632
+{
+  "id": "97e458b6-49b1-4f56-b7fa-b2270fccc3b0",
+  "speakerId": "简父",
+  "translatedText": "何を見ているんだ！"
+}
+
+00:00:30.933 --> 00:00:32.365
+{
+  "id": "60ff2753-c858-449c-afee-6f928deb16bb",
+  "speakerId": "简父",
+  "translatedText": "見てみろ、"
+}
+
+00:00:34.333 --> 00:00:35.199
+{
+  "id": "c20335bc-7f7a-4a93-9cbe-274a23ca2fbf",
+  "speakerId": "简柠",
+  "translatedText": "救いようがない連中ばかりだ"
+}
+
+00:00:36.533 --> 00:00:37.432
+{
+  "id": "26a2f81c-5b40-4730-93e3-66846f923662",
+  "speakerId": "代驾B",
+  "translatedText": "大丈夫か？"
+}
+
+00:00:37.433 --> 00:00:38.532
+{
+  "id": "6ad222c3-4b71-4426-8b8e-a8b27c0b0254",
+  "speakerId": "代驾B",
+  "translatedText": "怪我はなかったか？"
+}
+
+00:00:47.133 --> 00:00:49.132
+{
+  "id": "a864b4b8-6f3d-4359-a9fd-2da5adc1276b",
+  "speakerId": "简柠",
+  "translatedText": "こんにちは、運転代行サービスご利用されますか？"
+}
+
+00:00:49.300 --> 00:00:50.699
+{
+  "id": "fe0253ad-e643-418c-9e1b-54d707c87bd7",
+  "speakerId": "顾氏女",
+  "translatedText": "あっ、はい"
+}
+
+00:00:56.533 --> 00:00:57.332
+{
+  "id": "7dc78253-60b3-488a-b5dc-01ee45e976ce",
+  "speakerId": "顾氏女",
+  "translatedText": "あら"
+}
+
+00:00:59.300 --> 00:01:00.599
+{
+  "id": "3a2be221-55ae-4b32-aaf2-dc44c4be6611",
+  "speakerId": "秘书",
+  "translatedText": "これは顧社長の"
+}
+
+00:01:00.600 --> 00:01:01.432
+{
+  "id": "27d0d44d-bcdd-4e35-bf32-c78f7ea1d200",
+  "speakerId": "秘书",
+  "translatedText": "ロールスロイスじゃないか"
+}
+
+00:01:01.433 --> 00:01:02.299
+{
+  "id": "a2caffd7-2752-4254-8df5-e780413d945a",
+  "speakerId": "秘书",
+  "translatedText": "気を付けよ"
+}
+
+00:01:10.133 --> 00:01:10.932
+{
+  "id": "142a5aa6-d270-410c-89be-ac7abbf3eaca",
+  "speakerId": "简柠",
+  "translatedText": "わあ"
+}
+
+00:01:11.466 --> 00:01:14.065
+{
+  "id": "a708aca5-91f4-4735-ba3a-df64ed13d2cd",
+  "speakerId": "简柠",
+  "translatedText": "これが、千万級の高級車の感触か"
+}
+
+00:01:14.066 --> 00:01:14.699
+{
+  "id": "b7c0ce8e-1eab-45cd-9082-185f0d00be2a",
+  "speakerId": "顾时宴",
+  "translatedText": "運転しろ"
+}
+
+00:01:15.333 --> 00:01:17.232
+{
+  "id": "a76f168c-b02c-4fae-8138-efa891da6c8d",
+  "speakerId": "简柠",
+  "translatedText": "こんにちは、私は代行サービスの資格を持ち"
+}
+
+00:01:17.233 --> 00:01:17.965
+{
+  "id": "bd2f7c25-aa57-42f1-8d17-91a42dc4de69",
+  "speakerId": "简柠",
+  "translatedText": "運転歴は3年で"
+}
+
+00:01:17.966 --> 00:01:19.332
+{
+  "id": "b16602f5-635d-42b3-829f-c1224711a41a",
+  "speakerId": "简柠",
+  "translatedText": "これまで一度も交通事故を起こしたことはありません"
+}
+
+00:01:19.700 --> 00:01:20.999
+{
+  "id": "71ed6be3-bb31-4cd5-8325-a0f5bb479199",
+  "speakerId": "简柠",
+  "translatedText": "この高級車は私にお任せください"
+}
+
+00:01:21.000 --> 00:01:22.732
+{
+  "id": "a7f3f616-7c29-4944-97ff-46899bc55041",
+  "speakerId": "顾时宴",
+  "translatedText": "黙って運転しろ…"
+}
+
+00:01:28.133 --> 00:01:29.532
+{
+  "id": "ce5e1969-c70e-4223-8678-c900ded786be",
+  "speakerId": "顾氏女",
+  "translatedText": "まだ乗ってないんだけど"
+}
+
+00:01:39.300 --> 00:01:40.865
+{
+  "id": "1767ad45-1566-42e2-9a3d-e9774e575458",
+  "speakerId": "简柠",
+  "translatedText": "手を窓の外に出すのは危険です"
+}
+
+00:01:45.566 --> 00:01:46.465
+{
+  "id": "2afd127b-11e3-4266-bfe5-c5aae52dce3f",
+  "speakerId": "简柠",
+  "translatedText": "あなた、大丈夫ですか？"
+}
+
+00:01:56.233 --> 00:01:57.999
+{
+  "id": "bdc7ae46-6f68-4eb4-b560-70e84bfc86fa",
+  "speakerId": "简柠",
+  "translatedText": "先生、具合が悪いですか？"
+}
+
+00:01:59.833 --> 00:02:00.898
+{
+  "id": "094e37c2-b3a1-4fd1-80de-88bee372ba4c",
+  "speakerId": "简柠",
+  "translatedText": "すみません"
+}
+
+00:02:09.500 --> 00:02:11.465
+{
+  "id": "afde6d67-9a2f-4c34-a8b3-3573d8c5cdc7",
+  "speakerId": "简柠",
+  "translatedText": "何をするの、警察に通報しますよ"
+}
+

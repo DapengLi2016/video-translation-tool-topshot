@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>Microsoft.SpeechServices.CommonLib.Private</AssemblyName>
+		<RootNamespace>Microsoft.SpeechServices.CommonLib.Private</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <PackageReference Include="Polly" Version="8.2.1" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CommonLib.Public\CommonLib.Public.csproj" />
+	</ItemGroup>
+
+</Project>
