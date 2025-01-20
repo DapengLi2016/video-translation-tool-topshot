@@ -17,10 +17,13 @@ Video translation client tool for Topshot
    | Description | Command line arguments |
    | ------------ | -------------- |
    | Convert subtitle to metadata json webvtt file. | convertSubtitleToJsonWebvtt --sourceSubtitleFilePath [localSourceSubtitleFilePath](TestData/ConvertSubtitleToJsonWebvtt/Input.vtt) --targetWebvttFilePath [localTargetWebvttFilePath](TestData/ConvertSubtitleToJsonWebvtt/Output.vtt)  |
+   | Convert subtitle to metadata json webvtt file. | convertSubtitleDirToJsonWebvtt --sourceSubtitleDirPath [localSourceSubtitleDirPath] --targetWebvttDirPath [localTargetWebvttDirPath]  |
 
 # Command line tool arguments
    | Verb | Argument | Is Required | Supported Values Sample | Description |
    | -------- | -------- | -------- | ---------------- | ----------- |
-   | convertSubtitleToJsonWebvtt | --sourceSubtitleFilePath  | True | Local file path | Sample |
-   | convertSubtitleToJsonWebvtt | --targetWebvttFilePath | True | Local file path | Sample |
+   | convertSubtitleToJsonWebvtt | --sourceSubtitleFilePath  | True | C:\hello.vtt | Local file path |
+   | convertSubtitleToJsonWebvtt | --targetWebvttFilePath | True | C:\hello.vtt | Local file path |
+   | convertSubtitleToJsonWebvtt | --sourceSubtitleDirPath  | True | C:\sourceDir | Local dir path |
+   | convertSubtitleToJsonWebvtt | --targetWebvttDirPath | True | C:\targetDir | Local dir path |
 
