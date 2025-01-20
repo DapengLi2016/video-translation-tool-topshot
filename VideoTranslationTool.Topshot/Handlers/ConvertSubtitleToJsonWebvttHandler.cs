@@ -5,10 +5,10 @@
 
 namespace Microsoft.SpeechServices.VideoTranslationTool.Topshot.Handlers;
 
+using Microsoft.SpeechServices.Common;
 using Microsoft.SpeechServices.Common.Client;
 using Microsoft.SpeechServices.CustomVoice;
 using Microsoft.SpeechServices.CustomVoice.VideoTranslationWebVtt;
-using Microsoft.SpeechServices.VideoTranslationSample.PrivatePreview;
 using Microsoft.SpeechServices.VideoTranslationTool.Topshot.Util;
 using System;
 using System.IO;
@@ -17,18 +17,41 @@ using System.Threading.Tasks;
 
 internal class ConvertSubtitleToJsonWebvttHandler
 {
-    public static async Task ConvertSubtitleToJsonWebvttAsync(ConvertSubtitleToJsonWebvttOptions options)
+    public static async Task ConvertSubtitleDirToJsonWebvttAsync(string sourceSubtitleDirPath, string targetWebvttDirPath)
     {
-        ArgumentNullException.ThrowIfNull(options);
+        ArgumentException.ThrowIfNullOrWhiteSpace(sourceSubtitleDirPath);
+        ArgumentException.ThrowIfNullOrWhiteSpace(targetWebvttDirPath);
 
-        if (!File.Exists(options.SourceSubtitleFilePath))
+        if (!Directory.Exists(sourceSubtitleDirPath))
         {
-            throw new FileNotFoundException(options.SourceSubtitleFilePath);
+            throw new DirectoryNotFoundException(sourceSubtitleDirPath);
+        }
+
+        var dirInfo = new FileInfo(sourceSubtitleDirPath);
+        foreach (var filePath in Directory.GetFiles(dirInfo.FullName, $"*.{PrivateFileNameExtensions.WebVttFile}", SearchOption.AllDirectories))
+        {
+            // Due to SourceSubtitleDirPath maybe relative path, so get absulate path for calculating relative path.
+            var fileInfo = new FileInfo(filePath);
+
+            var relativePath = fileInfo.FullName.Substring(dirInfo.FullName.Length + 1);
+            var targetFilePath = Path.Combine(targetWebvttDirPath, relativePath);
+            await ConvertSubtitleFileToJsonWebvttAsync(fileInfo.FullName, targetFilePath).ConfigureAwait(false);
+        }
+    }
+
+    public static async Task ConvertSubtitleFileToJsonWebvttAsync(string sourceSubtitleFilePath, string targetWebvttFilePath)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(sourceSubtitleFilePath);
+        ArgumentException.ThrowIfNullOrWhiteSpace(targetWebvttFilePath);
+
+        if (!File.Exists(sourceSubtitleFilePath))
+        {
+            throw new FileNotFoundException(sourceSubtitleFilePath);
         }
 
         var (success, error, webVttFile, originalFileKind) = VideoTranslationWebVttFile.Load(
             plainTextKind: VideoTranslationWebVttFilePlainTextKind.TargetLocalePlainText,
-            filePath: options.SourceSubtitleFilePath);
+            filePath: sourceSubtitleFilePath);
         if (!success)
         {
             throw new InvalidDataException(error);
@@ -52,6 +75,6 @@ internal class ConvertSubtitleToJsonWebvttHandler
             }
         }
 
-        await webVttFile.SaveAsJsonMetadataWebvttFileAsync(options.TargetWebvttFilePath).ConfigureAwait(false);
+        await webVttFile.SaveAsJsonMetadataWebvttFileAsync(targetWebvttFilePath).ConfigureAwait(false);
     }
 }

@@ -13,6 +13,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 public class Program
 {
@@ -39,11 +40,10 @@ public class Program
 
     static async Task<int> RunAndReturnExitCodeAsync(object options)
     {
-        var optionsBase = options as ConvertSubtitleToJsonWebvttOptions;
-        ArgumentNullException.ThrowIfNull(optionsBase);
+        ArgumentNullException.ThrowIfNull(options);
         try
         {
-            return await DoRunAndReturnExitCodeAsync(optionsBase).ConfigureAwait(false);
+            return await DoRunAndReturnExitCodeAsync(options).ConfigureAwait(false);
         }
         catch (Exception e)
         {
@@ -52,11 +52,32 @@ public class Program
         }
     }
 
-    static async Task<int> DoRunAndReturnExitCodeAsync(ConvertSubtitleToJsonWebvttOptions options)
+    static async Task<int> DoRunAndReturnExitCodeAsync(object baseOptions)
     {
-        ArgumentNullException.ThrowIfNull(options);
+        ArgumentNullException.ThrowIfNull(baseOptions);
 
-        await ConvertSubtitleToJsonWebvttHandler.ConvertSubtitleToJsonWebvttAsync(options).ConfigureAwait(false);
+        switch (baseOptions)
+        {
+            case ConvertSubtitleFileToJsonWebvttOptions options:
+                {
+                    await ConvertSubtitleToJsonWebvttHandler.ConvertSubtitleFileToJsonWebvttAsync(
+                        sourceSubtitleFilePath: options.SourceSubtitleFilePath,
+                        targetWebvttFilePath: options.TargetWebvttFilePath).ConfigureAwait(false);
+                    break;
+                }
+
+            case ConvertSubtitleDirToJsonWebvttOptions options:
+                {
+                    await ConvertSubtitleToJsonWebvttHandler.ConvertSubtitleDirToJsonWebvttAsync(
+                        sourceSubtitleDirPath: options.SourceSubtitleDirPath,
+                        targetWebvttDirPath: options.TargetWebvttDirPath).ConfigureAwait(false);
+                    break;
+                }
+
+            default:
+                throw new NotSupportedException();
+        }
+
 
         return CommonPublicConst.ExistCodes.NoError;
     }

@@ -8,8 +8,8 @@ namespace Microsoft.SpeechServices.VideoTranslationSample.PrivatePreview;
 using CommandLine;
 using System;
 
-[Verb("convertSubtitleToJsonWebvtt", HelpText = "convert .")]
-public class ConvertSubtitleToJsonWebvttOptions
+[Verb("convertSubtitleFileToJsonWebvtt", HelpText = "Convert subtitle file to json webvtt.")]
+public class ConvertSubtitleFileToJsonWebvttOptions
 {
     [Option("sourceSubtitleFilePath", Required = true, HelpText = "Specify subtitle file path.")]
     public string SourceSubtitleFilePath { get; set; }
